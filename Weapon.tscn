@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Weapon.gd" type="Script" id=1]
+[ext_resource path="res://Bullet.tscn" type="PackedScene" id=2]
+
+[node name="Weapon" type="Node2D"]
+script = ExtResource( 1 )
+Bullet = ExtResource( 2 )
+
+[node name="EndOfWeapon" type="Position2D" parent="."]
+position = Vector2( 0, -8 )
+
+[node name="StartOfWeapon" type="Position2D" parent="."]
+
+[node name="CooldownTimer" type="Timer" parent="."]
